@@ -1,0 +1,64 @@
+---
+permalink: /
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GBP - Generator Bazowanych Podręczników</title>
+        
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    
+    <body>
+        <h1>Generator bazowanych podręczników</h1>
+        <hr />
+        
+        <main>
+            <div>
+                <!-- <img src="https://cdn.discordapp.com/attachments/741386544580919410/1018431846570278972/chem2.png" alt="" width="510"> -->
+                <canvas id="main"></canvas>
+            </div>
+
+            <nav>
+                <h1>Color</h1>
+                <div>
+                    <button id="red" onclick="changeBg(this)">Red</button>
+                    <button id="blue" onclick="changeBg(this)">Blue</button>
+                    <button id="green" onclick="changeBg(this)">Green</button>
+                    <button id="black" onclick="changeBg(this)">Black</button>
+                </div>
+                <h1>Text inputs</h1>
+                <div class="nobreak">
+                    <input type="text" placeholder="Title" id="title" onchange="changeText(this)">
+                    <input type="text" placeholder="Description" id="description" onchange="changeText(this)">
+                    <input type="text" placeholder="Description 2nd Line" id="description2" onchange="changeText(this)">
+                    <input type="text" placeholder="Subtext" id="zakres" onchange="changeText(this)">
+                    <input type="text" placeholder="For students after..." id="forwho" onchange="changeText(this)">
+                </div>
+                <h1>Additional Settings</h1>
+                <div>
+                    <input type="number" placeholder="Number" id="number" onchange="changeText(this)">
+                </div>
+                <div>
+                    <input type="color" id="zakresColor" onchange="changeText(this)" value="#20AA54">
+                    <!-- <input type="color" id="zakresColor" onchange="changeText(this)">
+                    <input type="color" id="zakresColor" onchange="changeText(this)">
+                    <input type="color" id="zakresColor" onchange="changeText(this)"> -->
+                </div>
+                <hr />
+                <div>
+                    <input type="submit" placeholder="Submit" onclick="render()">
+                </div>
+            </nav>
+
+        </main>
+
+        <script src="main.js"></script>
+
+    </body>
+    
+</html>

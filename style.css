@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    padding: 2rem;
+    margin: 2rem;
+    border-right: black 1px solid;
+}
+
+img {
+    padding: 2rem;
+    margin: 2rem;
+    margin-left: -4em;
+    transform: translateX(134px);
+}
+
+nav > div {
+    display: flex;
+}
+
+nav > div {
+    margin-top: 10px;
+}
+
+nav > div > button {
+    padding: 0.5em 3em;
+    font-size: 1.2em
+}
+
+
+nav > div input {
+    padding: 0.5em 3em;
+    font-size: 1.2em
+}
+
+input[type="color"] {
+    padding: 0;
+    margin: 0;
+}
+
+.nobreak {
+    flex-direction: column;
+}
